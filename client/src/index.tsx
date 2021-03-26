@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Route path="/game/:id" exact component={App} />
+      <Route path="/" exact component={Home} />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
