@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { BoardContainer, Board, StartScreen, ResetScreen } from './components';
-import { Winner } from './components/Board';
-import { Header } from './components/Header';
+import { BoardContainer, Board, StartScreen, ResetScreen } from '../components';
+import { Winner } from '../components/Board';
+import { Header } from '../components/Header';
 
 type GameState = 'start' | 'game' | 'reset';
 
