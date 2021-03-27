@@ -23,6 +23,7 @@ export default function App() {
   return (
     <div className="App">
       <Header>Tic-Tac-Toe</Header>
+
       <BoardContainer animate={gameState}>
         {gameState === 'start' && <StartScreen onStart={handleStart} />}
 
